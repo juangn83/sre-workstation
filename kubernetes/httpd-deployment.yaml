@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: httpd
+  template:
+    metadata:
+      labels:
+        app: httpd
+    spec:
+      containers:
+      - name: httpd
+        image: httpd:latest  # Use the appropriate Apache HTTP Server image
+        ports:
+        - containerPort: 80  # Port Apache HTTP Server listens on

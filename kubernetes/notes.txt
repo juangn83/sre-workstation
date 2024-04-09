@@ -1,0 +1,16 @@
+Cheat sheet
+
+Cluster settings:
+    kubectl config view
+    kubectl config current-context
+    kubectl config get-contexts
+    kubecti config get-users
+
+kubectl get namespaces
+
+kubectl apply -f file.yaml
+
+kubectl rollout 
+
+kubectl get deployments -o wide
+kubectl describe deploy <deploy_name>

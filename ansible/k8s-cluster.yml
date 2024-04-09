@@ -1,0 +1,16 @@
+k8scontrollers:
+    hosts:
+        ec2-35-87-122-38.us-west-2.compute.amazonaws.com:
+          ansible_port: 22
+          ansible_user: admin
+k8sworkers:
+    hosts:
+        ec2-54-185-55-154.us-west-2.compute.amazonaws.com:
+          ansible_port: 22
+          ansible_user: admin
+        ec2-34-219-6-58.us-west-2.compute.amazonaws.com:
+          ansible_port: 22
+          ansible_user: admin
+        ec2-34-216-142-93.us-west-2.compute.amazonaws.com:
+          ansible_port: 22
+          ansible_user: admin

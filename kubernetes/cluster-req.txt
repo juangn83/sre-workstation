@@ -1,0 +1,11 @@
+kubernetes cluster requirements:
+- subnet /24
+- internal comm: tcp,udp,icmp
+- external comm: 22/tcp, 6443/tcp, icmp
+- public ip address reservation
+- 
+default: 172.31.0.0/16
+us-west-2a: 172.31.0.0/18
+us-west-2b: 172.31.64.0/18
+us-west-2c: 172.31.128.0/18
+us-west-2d: 172.31.192.0/18

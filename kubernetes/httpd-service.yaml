@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-service
+spec:
+  selector:
+    app: httpd
+  ports:
+  - protocol: TCP
+    port: 8088   # Exposed port for accessing the Node.js application
+    targetPort: 80   # Port your Node.js application listens on inside the pod
+  type: NodePort   # Expose the service on a static port on each node
