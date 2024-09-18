@@ -1,5 +1,10 @@
 # SRE-WORKSTATION
 ## Configuration files to create an debian-based image to use daily as SRE.
+
+#### Requirements
+- Current user added into sudoers
+- Docker
+- Internet access
 #### Usage
 Terraform configuration file: /credentials/terraform.tfrc
 

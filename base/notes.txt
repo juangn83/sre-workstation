@@ -1,0 +1,1 @@
+sudo docker -m 4g run -ti debian-sre
