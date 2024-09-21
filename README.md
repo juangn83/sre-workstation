@@ -1,5 +1,5 @@
 # SRE-WORKSTATION
-## Configuration files to create an debian-based image to use daily as SRE.
+## This is my personal project to create an debian-based container image to use daily as SRE.
 
 #### Requirements
 - Current user added into sudoers
@@ -19,3 +19,5 @@ sudo docker build ./base/Dockerfile -t \<tagname\>
 ##### Run container
 sudo docker run -v \<absolute path to directory\>:/credentials -ti \<tagname\>
 
+## To Do:
+- Use the /credentials directory as a volume for the container.

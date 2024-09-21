@@ -16,7 +16,7 @@ spec:
       - name: tomcat
         image: tomcat:latest
         ports:
-        - containerPort: 8080  # Tomcat default port<
+        - containerPort: 8080  # Tomcat default port
         securityContext:
           runAsUser: 1000  # Example value, adjust based on your environment
           allowPrivilegeEscalation: false
