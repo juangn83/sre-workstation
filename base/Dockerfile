@@ -23,6 +23,8 @@ RUN unzip awscliv2.zip
 RUN ./aws/install
 RUN aws --version >> $INSTLOG
 ENV AWS_CONFIG_FILE=/credentials/aws_config 
+ENV AWS_ACCESS_KEY_ID=
+ENV AWS_SECRET_ACCESS_KEY=
 RUN touch $AWS_CONFIG_FILE
 # Kubectl Setup
 RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
