@@ -3,4 +3,4 @@ sudo docker build -t debian-sre-final .
 
 
 Start SRE Workstation
-sudo docker -m 4g run -ti debian-sre
+sudo docker -m 4g run -ti debian-sre-final
